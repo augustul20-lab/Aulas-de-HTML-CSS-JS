@@ -1,0 +1,10 @@
+*
+.meu-link {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.meu-link:hover {
+  color: red;
+}

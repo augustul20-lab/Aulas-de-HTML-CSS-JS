@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+.tituloanimado {
+  color: #333;
+  transition: color 0.5s ease;
+}
+
+.tituloanimado:hover {
+  color: #0077cc;
+}
+
+.botaoanimado {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botaoanimado:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: #218838;
+}
