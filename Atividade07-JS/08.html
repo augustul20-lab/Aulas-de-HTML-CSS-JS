@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 8</title>
+  <style>
+    #container {
+      margin-top: 20px;
+    }
+    .nova-div {
+      width: 200px;
+      height: 100px;
+      background-color: lightcoral;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border: 2px solid #aa0000;
+    }
+  </style>
+</head>
+<body>
+  <h2>Adicionar Elemento ao DOM</h2>
+  <button id="btnAdicionar">Adicionar Div</button>
+
+  <div id="container"></div>
+
+  <script>
+    const container = document.getElementById("container");
+    const btnAdicionar = document.getElementById("btnAdicionar");
+
+    btnAdicionar.addEventListener("click", function() {
+      const novaDiv = document.createElement("div");
+      novaDiv.classList.add("nova-div");
+      novaDiv.textContent = "Div adicionada!";
+      container.appendChild(novaDiv);
+    });
+  </script>
+</body>
+</html>

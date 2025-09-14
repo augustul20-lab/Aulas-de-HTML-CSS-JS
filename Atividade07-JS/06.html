@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <script>
+    // Solicita uma cor ao usuário
+    const cor = prompt("Digite uma cor (vermelho, verde ou azul):");
+
+    // Converte a entrada para minúsculas
+    const corNormalizada = cor.toLowerCase();
+
+    // Usa switch para responder de acordo com a cor
+    switch (corNormalizada) {
+      case "vermelho":
+        alert("internacional");
+        break;
+      case "verde":
+        alert("America");
+        break;
+      case "azul":
+        alert("Gremio");
+        break;
+      default:
+        alert("Cor não reconhecida. Tente vermelho, verde ou azul.");
+    }
+  </script>
+</body>
+</html>

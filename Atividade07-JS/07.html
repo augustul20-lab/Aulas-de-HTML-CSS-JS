@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+<style>
+    #mensagem {
+      font-size: 20px;
+      color: black;
+      transition: color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+    <p id="mensagem">A Romênia, membro da Otan e da União Europeia, alertou neste sábado (13) que um drone russo entrou em seu espaço aéreo, apenas três dias depois de 19 dispositivos de Moscou terem invadido o céu polonês, outro integrante da Aliança Atlântica.</p>
+<button id="botao">Clique aqui</button>
+
+<script>
+    // Seleciona os elementos
+    const paragrafo = document.getElementById("mensagem");
+    const botao = document.getElementById("botao");
+
+    // Adiciona o evento de clique usando addEventListener
+    botao.addEventListener("click", function() {
+      paragrafo.textContent = "Perigo! Acesso restrito";
+      paragrafo.style.color = "blue"; // muda a cor do texto
+    });
+</script>
+</body>
+</html>

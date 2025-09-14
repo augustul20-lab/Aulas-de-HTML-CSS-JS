@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 10</title>
+  <style>
+    .texto {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Nova incursão de drone russo no espaço aéreo de um país da Otan, desta vez na Romênia</h2>
+
+  <p class="texto">A Romênia, membro da Otan e da União Europeia, alertou neste sábado (13) que um drone russo entrou em seu espaço aéreo, apenas três dias depois de 19 dispositivos de Moscou terem invadido o céu polonês, outro integrante da Aliança Atlântica.</p>
+  <p class="texto">As autoridades romenas indicaram que a aeronave violou o espaço aéreo do país durante um ataque russo contra infraestruturas na vizinha Ucrânia, invadida por Moscou em fevereiro de 2022.</p>
+  <p class="texto">O exército de Bucareste enviou dois F-16 para supervisionar a situação, explicou o Ministério da Defesa em um comunicado.</p>
+
+  <button id="btnAlterar">Alterar</button>
+
+  <script>
+    const botao = document.getElementById("btnAlterar");
+
+    botao.addEventListener("click", function() {
+      const paragrafos = document.querySelectorAll(".texto");
+
+      paragrafos.forEach(function(p, index) {
+        p.textContent = `O exército de Bucareste enviou dois F-16 para supervisionar a situação`;
+        p.style.color = "darkred";
+        p.style.fontWeight = "bold";
+      });
+    });
+  </script>
+</body>
+</html>
