@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G2News.com.br</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo -->
+</head>
+<body>
+<!-- Cabeçalho do site -->
+  <header>
+<!-- Área que agrupa a logo e o título -->
+    <div class="logo-titulo">
+    <img src="imagens/logo.png" alt="Logo G2.News" class="logo"> <!-- Imagem da logo -->
+    
+  </div>
+<!-- Menu de navegação com categorias -->
+    <nav>
+      <ul>
+<!-- Cada item chama uma função JS para exibir notícias da categoria correspondente -->
+        <li><a href="#" onclick="mostrarCategoria('esporte')">Esporte</a></li>
+        <li><a href="#" onclick="mostrarCategoria('politica')">Política</a></li>
+        <li><a href="#" onclick="mostrarCategoria('entretenimento')">Entretenimento</a></li>
+        <li><a href="#" onclick="mostrarCategoria('famosos')">Mundo dos Famosos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Conteúdo principal da página -->
+  <main id="conteudo">
+    <section id="noticias-iniciais">
+      <h2>ÚLTIMAS NOTÍCIAS</h2> <!-- Título da seção de notícias iniciais -->
+
+<!-- Botão que aparece ao navegar por categorias para voltar à página inicial -->
+      <button id="voltar" style="display: none;">← Voltar para página inicial</button>
+<!-- Container onde as notícias serão inseridas dinamicamente via JavaScript -->
+      <div id="noticias"></div>
+    </section>
+  </main>
+
+<!-- Rodapé do site -->
+  <footer>
+    <p>&copy; 2025 - Augusto</p> <!-- Informações de direitos autorais -->
+  </footer>
+
+<!-- Importa o arquivo JavaScript que controla a lógica do site -->
+  <script src="script.js"></script>
+</body>
+</html>
